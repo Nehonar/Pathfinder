@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pathfinder</title>
+    <script type="text/javascript">
+    //Cahracters in arrey
+    var character = [
+      "strength",
+      "dexterity",
+      "constitution",
+      "charism",
+      "inteligence",
+      "wisdom"
+    ];
+    var points = []; //points random to distribute
+    var max = 18; //max points
+    var min = 7; //minimun points
+
+    //create randoms points
+    for(x = 0; x <= 5; x++) {
+      let p = Math.round(Math.random() * (max - min) + min);
+      if(p >= 16 && p <= 18) max = 14;
+      points.push(p);
+    }
+
+    //compare and organizate points of upper at lower
+    points = points.sort(function(a, b) {
+      return b - a;
+    });
+
+    //distribution of points a diferents characters
+    for (var i = 0; i < character.length; i++) {
+      character[i] = points[i];
+    }
+
+    //avarage of character
+    var average = (
+      character[0] +
+      character[1] +
+      character[2] +
+      character[3] +
+      character[4] +
+      character[5]) / 6;
+
+      console.log(
+        "Warrior",
+        "\n\nStrength =", character[0],
+        "\nDexterity =", character[1],
+        "\nConstitution =", character[2],
+        "\nInteligence =", character[4],
+        "\nWisdom =", character[5],
+        "\nCharism =", character[3],
+        "\n\nAverage =", average
+      );
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pathfinder</title>
+    <script type="text/javascript" src="./scripts/warrior.js"></script>
+  </head>
+  <body>
+    <h1>Warrior</h1>
+    <br>
+    <button type="button" name="button" onclick="charac()">Characters<br>Creation</button>
+    <button type="button" name="button" onclick="dis_mc()">Distribution<br>MC</button>
+    <table name="Characters">
+      <tr>
+        <th>Characters</th>
+        <th>Points</th>
+        <th></th>
+        <th>MC</th>
+      </tr>
+      <tr>
+        <td>Strength</td>
+        <td align="center" size="5px"><input id="Strength" size="3px"></input></td>
+        <td>=></td>
+        <td align="center" id="str_mc" size="5px"></td>
+      </tr>
+      <tr>
+        <td>Dexterity</td>
+        <td align="center" size="5px"><input id="Dexterity" size="3px"></input></td>
+        <td>=></td>
+        <td align="center" id="dex_mc" size="5px"></td>
+      </tr>
+      <tr>
+        <td>Constitution</td>
+        <td align="center" size="5px"><input id="Constitution" size="3px"></input></td>
+        <td>=></td>
+        <td align="center" id="con_mc" size="5px"></td>
+      </tr>
+      <tr>
+        <td>Inteligence</td>
+        <td align="center" size="5px"><input id="Inteligence" size="3px"></input></td>
+        <td>=></td>
+        <td align="center" id="int_mc" size="5px"></td>
+      </tr>
+      <tr>
+        <td>Wisdom</td>
+        <td align="center" size="5px"><input id="Wisdom" size="3px"></input></td>
+        <td>=></td>
+        <td align="center" id="wis_mc" size="5px"></td>
+      </tr>
+      <tr>
+        <td>Charism</td>
+        <td align="center" size="5px"><input id="Charism" size="3px"></input></td>
+        <td>=></td>
+        <td align="center" id="char_mc" size="5px"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Average</b></td>
+        <th align="center" size="5px" id="average"></th>
+      </tr>
+    </table>
+
+    <table name="Player">
+      <tr>
+        <td name="charac_name">Character name <input></td>
+        <td name="alignment">Alignment<input></td>
+        <td name="player">Player<input></td>
+      </tr>
+      <tr>
+        <td name="chara_level">Character level<input></td>
+        <td name="deity">Deity<input></td>
+        <td name="homeland">Homeland<input></td>
+      </tr>
+      <tr>
+        <td anme="race">Race<input></td>
+        <td name="size">Size<input></td>
+        <td name="gender">Gender<input></td>
+        <td name="age">Age<input></td>
+        <td name="height">Heigth<input></td>
+        <td name="weight">Weight<input></td>
+        <td name="hair">Hair<input></td>
+        <td name="eyes">Eyes<input></td>
+      </tr>
+    </table>
+  </body>
+</html>
